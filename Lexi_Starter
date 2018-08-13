@@ -1,0 +1,122 @@
+package java2enterprise_mainFrame;
+
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+
+public class Lexi extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Lexi frame = new Lexi();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public Lexi() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\MuhammetEsmer\\Pictures\\Lexi_Logo.png"));
+		setTitle("Lexi 1.0");
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 396, 253);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.GRAY);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnNewButtonUu = new JButton("EinheitenUmrechner");
+		btnNewButtonUu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				EinheitenUmrechner frame = new EinheitenUmrechner();
+				frame.setVisible(true);
+			}
+		});
+		btnNewButtonUu.setBackground(Color.ORANGE);
+		btnNewButtonUu.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnNewButtonUu.setToolTipText("");
+		btnNewButtonUu.setBounds(10, 10, 180, 60);
+		contentPane.add(btnNewButtonUu);
+		
+		JButton btnRechner = new JButton("Rechner");
+		btnRechner.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Rechner frame = new Rechner();
+				frame.setVisible(false);
+			}
+		});
+		btnRechner.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnRechner.setBackground(Color.ORANGE);
+		btnRechner.setToolTipText("");
+		btnRechner.setBounds(200, 10, 180, 60);
+		contentPane.add(btnRechner);
+		
+		JButton btnPhyKonstanten = new JButton("Phy.Konstanten");
+		btnPhyKonstanten.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PhyKonstanten frame = new PhyKonstanten();
+				frame.setVisible(true);
+			}
+		});
+		btnPhyKonstanten.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnPhyKonstanten.setBackground(Color.ORANGE);
+		btnPhyKonstanten.setToolTipText("");
+		btnPhyKonstanten.setBounds(10, 81, 180, 60);
+		contentPane.add(btnPhyKonstanten);
+		
+		JButton btnChemelemente = new JButton("Chem.Elemente");
+		btnChemelemente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ChemischeElemente frame = new ChemischeElemente();
+				frame.setVisible(true);
+			}
+		});
+		btnChemelemente.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnChemelemente.setBackground(Color.ORANGE);
+		btnChemelemente.setToolTipText("");
+		btnChemelemente.setBounds(200, 81, 180, 60);
+		contentPane.add(btnChemelemente);
+		
+		JButton btnAbout_Lexi = new JButton("About Lexi");
+		btnAbout_Lexi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				AboutLexi frame = new AboutLexi();
+				frame.setVisible(true);
+			}
+		});
+		btnAbout_Lexi.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnAbout_Lexi.setBackground(Color.ORANGE);
+		btnAbout_Lexi.setToolTipText("");
+		btnAbout_Lexi.setBounds(10, 152, 180, 60);
+		contentPane.add(btnAbout_Lexi);
+		
+		JButton btnSupport = new JButton("Support");
+		btnSupport.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Support verbinden = new Support();
+				verbinden.setVisible(true);
+			}
+		});
+		btnSupport.setFont(new Font("Tahoma", Font.BOLD, 12));
+		btnSupport.setBackground(Color.ORANGE);
+		btnSupport.setToolTipText("");
+		btnSupport.setBounds(200, 152, 180, 60);
+		contentPane.add(btnSupport);
+	}
+}
