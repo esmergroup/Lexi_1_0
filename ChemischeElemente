@@ -1,0 +1,1423 @@
+package java2enterprise_mainFrame;
+
+import java.awt.Font;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Choice;
+import java.awt.Color;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Toolkit;
+
+public class ChemischeElemente extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	public ChemischeElemente() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\MuhammetEsmer\\Pictures\\Lexi_Logo.png"));
+		setTitle("Chemische Elemente");
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 660, 378);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.GRAY);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		Choice choice = new Choice();
+		choice.setBackground(Color.ORANGE);
+		choice.setBounds(10, 10, 235, 20);
+		
+		choice.add("Aluminium"); 
+		choice.add("Antimon");
+		choice.add("Argon");
+		choice.add("Arsen");
+		choice.add("Astat");
+		choice.add("Barium");
+		choice.add("Beryllium");
+		choice.add("Bismut");
+		choice.add("Blei");
+		choice.add("Bor");
+		choice.add("Brom");
+		choice.add("Cadmium");
+		choice.add("Caesium");
+		choice.add("Chlor");
+		choice.add("Chrom");
+		choice.add("Cobald");
+		choice.add("Eisen");
+		choice.add("Fluor");
+		choice.add("Francium");
+		choice.add("Gallium");
+		choice.add("Germanium");
+		choice.add("Gold");
+		choice.add("Hafnium");
+		choice.add("Helium");
+		choice.add("Indium");
+		choice.add("Iod");
+		choice.add("Iridium");
+		choice.add("Kalium");
+		choice.add("Kohlenstoff");
+		choice.add("Krypton");
+		choice.add("Kupfer");
+		choice.add("Lithium");
+		choice.add("Magnesium");
+		choice.add("Mangan");
+		choice.add("Molybdaen");
+		choice.add("Natrium");
+		choice.add("Neon");
+		choice.add("Nickel");
+		choice.add("Niob");
+		choice.add("Osmium");
+		choice.add("Palladium");
+		choice.add("Phosphor");
+		choice.add("Platin");
+		choice.add("Polonium");
+		choice.add("Quecksilber");
+		choice.add("Radium");
+		choice.add("Radon");
+		choice.add("Rhenium");
+		choice.add("Rhodium");
+		choice.add("Rubidium");
+		choice.add("Ruthenium");
+		choice.add("Sauerstoff");
+		choice.add("Scandium");
+		choice.add("Schwefel");
+		choice.add("Selen");
+		choice.add("Silber");
+		choice.add("Silizium");
+		choice.add("Stickstoff");
+		choice.add("Stronzium");
+		choice.add("Tantal");
+		choice.add("Technetium");
+		choice.add("Tellur");
+		choice.add("Thallium");
+		choice.add("Titan");
+		choice.add("Vanadium");
+		choice.add("Wasserstoff");
+		choice.add("Wolfram");
+		choice.add("Xenon");
+		choice.add("Yttrium");
+		choice.add("Zink");
+		choice.add("Zinn");
+		choice.add("Zirconium");
+		
+		contentPane.add(choice);
+		
+		JLabel lblNewLabel = new JLabel("Relative Atommasse:");
+		lblNewLabel.setForeground(Color.ORANGE);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel.setBounds(265, 45, 168, 22);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblSchmelzpunkt = new JLabel("Schmelzpunkt:");
+		lblSchmelzpunkt.setForeground(Color.ORANGE);
+		lblSchmelzpunkt.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblSchmelzpunkt.setBounds(265, 91, 168, 22);
+		contentPane.add(lblSchmelzpunkt);
+		
+		JLabel lblOrdnungszahl = new JLabel("Ordnungszahl:");
+		lblOrdnungszahl.setForeground(Color.ORANGE);
+		lblOrdnungszahl.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblOrdnungszahl.setBounds(265, 68, 168, 22);
+		contentPane.add(lblOrdnungszahl);
+		
+		JLabel lblElektronegativitt = new JLabel("Elektronegativit\u00E4t:");
+		lblElektronegativitt.setForeground(Color.ORANGE);
+		lblElektronegativitt.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblElektronegativitt.setBounds(265, 183, 168, 22);
+		contentPane.add(lblElektronegativitt);
+		
+		JLabel lblDichte = new JLabel("Dichte:");
+		lblDichte.setForeground(Color.ORANGE);
+		lblDichte.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblDichte.setBounds(265, 160, 168, 22);
+		contentPane.add(lblDichte);
+		
+		JLabel lblOxidationszahlen = new JLabel("Oxidationszahlen:");
+		lblOxidationszahlen.setForeground(Color.ORANGE);
+		lblOxidationszahlen.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblOxidationszahlen.setBounds(265, 137, 168, 22);
+		contentPane.add(lblOxidationszahlen);
+		
+		JLabel lblSiedepunkt = new JLabel("Siedepunkt:");
+		lblSiedepunkt.setForeground(Color.ORANGE);
+		lblSiedepunkt.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblSiedepunkt.setBounds(265, 114, 168, 22);
+		contentPane.add(lblSiedepunkt);
+		
+		JLabel lblElektronenkonfiguration = new JLabel("Elektronenkonfiguration:");
+		lblElektronenkonfiguration.setForeground(Color.ORANGE);
+		lblElektronenkonfiguration.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblElektronenkonfiguration.setBounds(265, 206, 168, 22);
+		contentPane.add(lblElektronenkonfiguration);
+		
+		JLabel lblNatrlicheHufigkeit = new JLabel("Nat\u00FCrliche H\u00E4ufigkeit:");
+		lblNatrlicheHufigkeit.setForeground(Color.ORANGE);
+		lblNatrlicheHufigkeit.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNatrlicheHufigkeit.setBounds(265, 229, 168, 22);
+		contentPane.add(lblNatrlicheHufigkeit);
+		
+		JLabel lblMainTitle = new JLabel("");
+		lblMainTitle.setForeground(Color.ORANGE);
+		lblMainTitle.setFont(new Font("Tahoma", Font.BOLD, 30));
+		lblMainTitle.setBounds(263, -3, 380, 47);
+		contentPane.add(lblMainTitle);
+		
+		JLabel lblRelAtomMas_VAR = new JLabel("");
+		lblRelAtomMas_VAR.setForeground(Color.ORANGE);
+		lblRelAtomMas_VAR.setBounds(442, 45, 201, 22);
+		contentPane.add(lblRelAtomMas_VAR);
+		
+		JLabel lblOrdnungsZahl_VAR = new JLabel("");
+		lblOrdnungsZahl_VAR.setForeground(Color.ORANGE);
+		lblOrdnungsZahl_VAR.setBounds(442, 68, 201, 22);
+		contentPane.add(lblOrdnungsZahl_VAR);
+		
+		JLabel lblSchmelzPunkt_VAR = new JLabel("");
+		lblSchmelzPunkt_VAR.setForeground(Color.ORANGE);
+		lblSchmelzPunkt_VAR.setBounds(443, 91, 201, 22);
+		contentPane.add(lblSchmelzPunkt_VAR);
+		
+		JLabel lblSiedeTemp_VAR = new JLabel("");
+		lblSiedeTemp_VAR.setForeground(Color.ORANGE);
+		lblSiedeTemp_VAR.setBounds(443, 114, 201, 22);
+		contentPane.add(lblSiedeTemp_VAR);
+		
+		JLabel lblOxidation_VAR = new JLabel("");
+		lblOxidation_VAR.setForeground(Color.ORANGE);
+		lblOxidation_VAR.setBounds(443, 137, 201, 22);
+		contentPane.add(lblOxidation_VAR);
+		
+		JLabel lblDichtee_VAR = new JLabel("");
+		lblDichtee_VAR.setForeground(Color.ORANGE);
+		lblDichtee_VAR.setBounds(443, 160, 201, 22);
+		contentPane.add(lblDichtee_VAR);
+		
+		JLabel lblElektNegativ_VAR = new JLabel("");
+		lblElektNegativ_VAR.setForeground(Color.ORANGE);
+		lblElektNegativ_VAR.setBounds(443, 183, 201, 22);
+		contentPane.add(lblElektNegativ_VAR);
+		
+		JLabel lblElektKonfig_VAR = new JLabel("");
+		lblElektKonfig_VAR.setForeground(Color.ORANGE);
+		lblElektKonfig_VAR.setBounds(443, 206, 201, 22);
+		contentPane.add(lblElektKonfig_VAR);
+		
+		JLabel lblNaturKonfig_VAR = new JLabel("");
+		lblNaturKonfig_VAR.setForeground(Color.ORANGE);
+		lblNaturKonfig_VAR.setBounds(443, 229, 201, 22);
+		contentPane.add(lblNaturKonfig_VAR);
+		
+		JLabel lblAnzahlProtonen = new JLabel("Anzahl Protonen:");
+		lblAnzahlProtonen.setForeground(Color.ORANGE);
+		lblAnzahlProtonen.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblAnzahlProtonen.setBounds(265, 252, 168, 22);
+		contentPane.add(lblAnzahlProtonen);
+		
+		JLabel lblAnzahlNeutronen = new JLabel("Anzahl Neutronen:");
+		lblAnzahlNeutronen.setForeground(Color.ORANGE);
+		lblAnzahlNeutronen.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblAnzahlNeutronen.setBounds(265, 275, 168, 22);
+		contentPane.add(lblAnzahlNeutronen);
+		
+		JLabel lblAnzahlElektronen = new JLabel("Anzahl Elektronen:");
+		lblAnzahlElektronen.setForeground(Color.ORANGE);
+		lblAnzahlElektronen.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblAnzahlElektronen.setBounds(265, 298, 168, 22);
+		contentPane.add(lblAnzahlElektronen);
+		
+		JLabel lblHauptgruppe = new JLabel("Hauptgruppe:");
+		lblHauptgruppe.setForeground(Color.ORANGE);
+		lblHauptgruppe.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblHauptgruppe.setBounds(265, 321, 168, 22);
+		contentPane.add(lblHauptgruppe);
+		
+		JLabel lblAnzahlProton_VAR = new JLabel("");
+		lblAnzahlProton_VAR.setForeground(Color.ORANGE);
+		lblAnzahlProton_VAR.setBounds(442, 252, 201, 22);
+		contentPane.add(lblAnzahlProton_VAR);
+		
+		JLabel lblAnzahlNeutron_VAR = new JLabel("");
+		lblAnzahlNeutron_VAR.setForeground(Color.ORANGE);
+		lblAnzahlNeutron_VAR.setBounds(442, 275, 201, 22);
+		contentPane.add(lblAnzahlNeutron_VAR);
+		
+		JLabel lblAnzahlElektron_VAR = new JLabel("");
+		lblAnzahlElektron_VAR.setForeground(Color.ORANGE);
+		lblAnzahlElektron_VAR.setBounds(442, 298, 201, 22);
+		contentPane.add(lblAnzahlElektron_VAR);
+		
+		JLabel lblHauptGrupe_VAR = new JLabel("");
+		lblHauptGrupe_VAR.setForeground(Color.ORANGE);
+		lblHauptGrupe_VAR.setBounds(442, 321, 201, 22);
+		contentPane.add(lblHauptGrupe_VAR);
+		
+		JButton btnAusWaehlen = new JButton("Ausw\u00E4hlen");
+		btnAusWaehlen.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				String wert = choice.getItem(choice.getSelectedIndex());
+				
+				if(wert.equals("Aluminium")) {
+					lblMainTitle.setText("ALUMINIUM [Al]");
+					lblRelAtomMas_VAR.setText("26.981538");
+					lblOrdnungsZahl_VAR.setText("13");
+					lblSchmelzPunkt_VAR.setText("660.32 °C");
+					lblSiedeTemp_VAR.setText("2519 °C");
+					lblOxidation_VAR.setText("3");
+					lblDichtee_VAR.setText("2.6989 g/cm^3");
+					lblElektNegativ_VAR.setText("1.61 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne] 3s^2 3p");
+					lblNaturKonfig_VAR.setText("Al-27: 100%");
+					lblAnzahlProton_VAR.setText("13");
+					lblAnzahlNeutron_VAR.setText("13");
+					lblAnzahlElektron_VAR.setText("13");
+					lblHauptGrupe_VAR.setText("III");
+				}
+				else if(wert.equals("Antimon")) {
+					lblMainTitle.setText("ANTIMON [Sb]");
+					lblRelAtomMas_VAR.setText("121.76");
+					lblOrdnungsZahl_VAR.setText("51");
+					lblSchmelzPunkt_VAR.setText("630.5 °C");
+					lblSiedeTemp_VAR.setText("1587 °C");
+					lblOxidation_VAR.setText("5, 3, -3");
+					lblDichtee_VAR.setText("6.684 g/cm^3");
+					lblElektNegativ_VAR.setText("2.05(Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s^2 5p^3");
+					lblNaturKonfig_VAR.setText("Sb-121: 57.2%, Sb-123: 42.8%");
+					lblAnzahlProton_VAR.setText("51");
+					lblAnzahlNeutron_VAR.setText("70");
+					lblAnzahlElektron_VAR.setText("51");
+					lblHauptGrupe_VAR.setText("V");
+				}
+				else if(wert.equals("Argon")) {
+					lblMainTitle.setText("ARGON [Ar]");
+					lblRelAtomMas_VAR.setText("39.948");
+					lblOrdnungsZahl_VAR.setText("18");
+					lblSchmelzPunkt_VAR.setText("-189.37 °C");
+					lblSiedeTemp_VAR.setText("-185.86 °C");
+					lblOxidation_VAR.setText("---");
+					lblDichtee_VAR.setText("1.78 g/l");
+					lblElektNegativ_VAR.setText("Keine Angabe");
+					lblElektKonfig_VAR.setText("[Ne]3s^2 3p^6");
+					lblNaturKonfig_VAR.setText("Ar-40: 99.60%,...");
+					lblAnzahlProton_VAR.setText("18");
+					lblAnzahlNeutron_VAR.setText("22");
+					lblAnzahlElektron_VAR.setText("18");
+					lblHauptGrupe_VAR.setText("VIII");
+				}
+				else if(wert.equals("Arsen")) {
+					lblMainTitle.setText("ARSEN [As]");
+					lblRelAtomMas_VAR.setText("74.9216");
+					lblOrdnungsZahl_VAR.setText("33");
+					lblSchmelzPunkt_VAR.setText("612 °C");
+					lblSiedeTemp_VAR.setText("---");
+					lblOxidation_VAR.setText("5, 3, -3");
+					lblDichtee_VAR.setText("5.75 g/cm^3");
+					lblElektNegativ_VAR.setText("2.18(Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^10 4s^2 4p^3");
+					lblNaturKonfig_VAR.setText("As-75: 100%");
+					lblAnzahlProton_VAR.setText("33");
+					lblAnzahlNeutron_VAR.setText("42");
+					lblAnzahlElektron_VAR.setText("33");
+					lblHauptGrupe_VAR.setText("V");
+				}
+				else if(wert.equals("Astat")) {
+					lblMainTitle.setText("ASTAT [At]");
+					lblRelAtomMas_VAR.setText("210");
+					lblOrdnungsZahl_VAR.setText("85");
+					lblSchmelzPunkt_VAR.setText("302 °C");
+					lblSiedeTemp_VAR.setText("370 °C");
+					lblOxidation_VAR.setText("7, 5, -1");
+					lblDichtee_VAR.setText("8.75 g/cm^3");
+					lblElektNegativ_VAR.setText("2.20 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2 6p^5");
+					lblNaturKonfig_VAR.setText("At-215, At-216, At-218, At-219");
+					lblAnzahlProton_VAR.setText("85");
+					lblAnzahlNeutron_VAR.setText("124");
+					lblAnzahlElektron_VAR.setText("85");
+					lblHauptGrupe_VAR.setText("VII");
+				}
+				else if(wert.equals("Barium")) {
+					lblMainTitle.setText("BARIUM [Ba]");
+					lblRelAtomMas_VAR.setText("137.327");
+					lblOrdnungsZahl_VAR.setText("56");
+					lblSchmelzPunkt_VAR.setText("727 °C");
+					lblSiedeTemp_VAR.setText("1897 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("3.62 g/cm^3");
+					lblElektNegativ_VAR.setText("0.89 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]6s");
+					lblNaturKonfig_VAR.setText("Ba-138: 71.698%, Ba-137: 11.232%,...");
+					lblAnzahlProton_VAR.setText("56");
+					lblAnzahlNeutron_VAR.setText("81");
+					lblAnzahlElektron_VAR.setText("56");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Beryllium")) {
+					lblMainTitle.setText("BERYLLIUM [Be]");
+					lblRelAtomMas_VAR.setText("9.01");
+					lblOrdnungsZahl_VAR.setText("4");
+					lblSchmelzPunkt_VAR.setText("1287 °C");
+					lblSiedeTemp_VAR.setText("2471 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("1.848 g/cm^3");
+					lblElektNegativ_VAR.setText("1.57 (Pauling)");
+					lblElektKonfig_VAR.setText("[He]2s^2");
+					lblNaturKonfig_VAR.setText("B3-9 100%");
+					lblAnzahlProton_VAR.setText("4");
+					lblAnzahlNeutron_VAR.setText("5");
+					lblAnzahlElektron_VAR.setText("4");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Bismut")) {
+					lblMainTitle.setText("BISMUT [Bi]");
+					lblRelAtomMas_VAR.setText("208.9804");
+					lblOrdnungsZahl_VAR.setText("83");
+					lblSchmelzPunkt_VAR.setText("271.3 °C");
+					lblSiedeTemp_VAR.setText("1564 °C");
+					lblOxidation_VAR.setText("5, 3");
+					lblDichtee_VAR.setText("9.79 g/cm^3");
+					lblElektNegativ_VAR.setText("1.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2 6p^3");
+					lblNaturKonfig_VAR.setText("Bi-209 100%");
+					lblAnzahlProton_VAR.setText("83");
+					lblAnzahlNeutron_VAR.setText("126");
+					lblAnzahlElektron_VAR.setText("83");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Blei")) {
+					lblMainTitle.setText("BLEI [Pb]");
+					lblRelAtomMas_VAR.setText("207.2");
+					lblOrdnungsZahl_VAR.setText("82");
+					lblSchmelzPunkt_VAR.setText("327.502 °C");
+					lblSiedeTemp_VAR.setText("1749 °C");
+					lblOxidation_VAR.setText("4, 2");
+					lblDichtee_VAR.setText("11.35 g/cm^3");
+					lblElektNegativ_VAR.setText("1.8 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2 6p^2");
+					lblNaturKonfig_VAR.setText("Pb-204: 1.4%, Pb-206: 24.1%,....");
+					lblAnzahlProton_VAR.setText("82");
+					lblAnzahlNeutron_VAR.setText("125");
+					lblAnzahlElektron_VAR.setText("82");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Bor")) {
+					lblMainTitle.setText("BOR [B]");
+					lblRelAtomMas_VAR.setText("10.8");
+					lblOrdnungsZahl_VAR.setText("5");
+					lblSchmelzPunkt_VAR.setText("2075 °C");
+					lblSiedeTemp_VAR.setText("4000 °C");
+					lblOxidation_VAR.setText("3");
+					lblDichtee_VAR.setText("2.34 g/cm^3");
+					lblElektNegativ_VAR.setText("2.04 (Pauling)");
+					lblElektKonfig_VAR.setText("[He]2s^2 2p");
+					lblNaturKonfig_VAR.setText("B-10: 19.9%, B-11: 80.1%");
+					lblAnzahlProton_VAR.setText("5");
+					lblAnzahlNeutron_VAR.setText("6");
+					lblAnzahlElektron_VAR.setText("5");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Brom")) {
+					lblMainTitle.setText("BROM [Br]");
+					lblRelAtomMas_VAR.setText("79.904");
+					lblOrdnungsZahl_VAR.setText("35");
+					lblSchmelzPunkt_VAR.setText("-7.2 °C");
+					lblSiedeTemp_VAR.setText("58.8 °C");
+					lblOxidation_VAR.setText("7, 5, 3, 1, -1");
+					lblDichtee_VAR.setText("3.12 g/cm^3");
+					lblElektNegativ_VAR.setText("2.96 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^10 4s^2 4p^5");
+					lblNaturKonfig_VAR.setText("Br-79: 50.69%, Br-81: 49.31%");
+					lblAnzahlProton_VAR.setText("35");
+					lblAnzahlNeutron_VAR.setText("45");
+					lblAnzahlElektron_VAR.setText("35");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Cadmium")) {
+					lblMainTitle.setText("CADMIUM [Cd]");
+					lblRelAtomMas_VAR.setText("112.414");
+					lblOrdnungsZahl_VAR.setText("48");
+					lblSchmelzPunkt_VAR.setText("320.9 °C");
+					lblSiedeTemp_VAR.setText("767 °C");
+					lblOxidation_VAR.setText("2, 1");
+					lblDichtee_VAR.setText("8.69 g/cm^3");
+					lblElektNegativ_VAR.setText("1.69 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s^2");
+					lblNaturKonfig_VAR.setText("Cd-114: 28.73%, Cd-112: 24.13%, ...");
+					lblAnzahlProton_VAR.setText("48");
+					lblAnzahlNeutron_VAR.setText("64");
+					lblAnzahlElektron_VAR.setText("48");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Caesium")) {
+					lblMainTitle.setText("CAESIUM [Cs]");
+					lblRelAtomMas_VAR.setText("132.90");
+					lblOrdnungsZahl_VAR.setText("55");
+					lblSchmelzPunkt_VAR.setText("28.44 °C");
+					lblSiedeTemp_VAR.setText("671 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("1.873 g/cm^3");
+					lblElektNegativ_VAR.setText("0.79 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]6s");
+					lblNaturKonfig_VAR.setText("Cs-133: 100%");
+					lblAnzahlProton_VAR.setText("55");
+					lblAnzahlNeutron_VAR.setText("78");
+					lblAnzahlElektron_VAR.setText("55");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Chlor")) {
+					lblMainTitle.setText("CHLOR [Cl]");
+					lblRelAtomMas_VAR.setText("35.45");
+					lblOrdnungsZahl_VAR.setText("17");
+					lblSchmelzPunkt_VAR.setText("-101.5 °C");
+					lblSiedeTemp_VAR.setText("-34.04 °C");
+					lblOxidation_VAR.setText("7, 5, 3, 1, -1");
+					lblDichtee_VAR.setText("3.214 g/l");
+					lblElektNegativ_VAR.setText("3.16 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne]3s^2 3p^5");
+					lblNaturKonfig_VAR.setText("cl-35: 75.76%, cl-37: 24.24%");
+					lblAnzahlProton_VAR.setText("17");
+					lblAnzahlNeutron_VAR.setText("18");
+					lblAnzahlElektron_VAR.setText("17");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Chrom")) {
+					lblMainTitle.setText("CHROM [Cr]");
+					lblRelAtomMas_VAR.setText("52");
+					lblOrdnungsZahl_VAR.setText("24");
+					lblSchmelzPunkt_VAR.setText("1908 °C");
+					lblSiedeTemp_VAR.setText("2671 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 1, 0, -1, -2");
+					lblDichtee_VAR.setText("7.15 g/cm^3");
+					lblElektNegativ_VAR.setText("1.66 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^5 4s");
+					lblNaturKonfig_VAR.setText("Cr-52: 83.789%, ...");
+					lblAnzahlProton_VAR.setText("24");
+					lblAnzahlNeutron_VAR.setText("28");
+					lblAnzahlElektron_VAR.setText("24");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Cobald")) {
+					lblMainTitle.setText("COBALD [Co]");
+					lblRelAtomMas_VAR.setText("58.933");
+					lblOrdnungsZahl_VAR.setText("27");
+					lblSchmelzPunkt_VAR.setText("1495 °C");
+					lblSiedeTemp_VAR.setText("2927 °C");
+					lblOxidation_VAR.setText("5, 4, 3, 2, 1, 0, -1");
+					lblDichtee_VAR.setText("8.9 g/cm^3");
+					lblElektNegativ_VAR.setText("1.88 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^7 4s^2");
+					lblNaturKonfig_VAR.setText("Co-59: 100%");
+					lblAnzahlProton_VAR.setText("27");
+					lblAnzahlNeutron_VAR.setText("32");
+					lblAnzahlElektron_VAR.setText("27");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Eisen")) {
+					lblMainTitle.setText("EISEN [Fe]");
+					lblRelAtomMas_VAR.setText("55.845");
+					lblOrdnungsZahl_VAR.setText("26");
+					lblSchmelzPunkt_VAR.setText("1538 °C");
+					lblSiedeTemp_VAR.setText("2861 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 1, 0, -1, -2");
+					lblDichtee_VAR.setText("7.874 g/cm^3");
+					lblElektNegativ_VAR.setText("1,83 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^6 4s^2");
+					lblNaturKonfig_VAR.setText("Fe-56: 91.754%, Fe-54: 5.84%,...");
+					lblAnzahlProton_VAR.setText("26");
+					lblAnzahlNeutron_VAR.setText("30");
+					lblAnzahlElektron_VAR.setText("26");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Fluor")) {
+					lblMainTitle.setText("FLUOR [F]");
+					lblRelAtomMas_VAR.setText("18.99");
+					lblOrdnungsZahl_VAR.setText("9");
+					lblSchmelzPunkt_VAR.setText("-219.67 °C");
+					lblSiedeTemp_VAR.setText("-188.12 °C");
+					lblOxidation_VAR.setText("-1");
+					lblDichtee_VAR.setText("1.696 g/l");
+					lblElektNegativ_VAR.setText("3.98 (Pauling)");
+					lblElektKonfig_VAR.setText("[He] 2s^2 2p^5");
+					lblNaturKonfig_VAR.setText("F-19: 100%");
+					lblAnzahlProton_VAR.setText("9");
+					lblAnzahlNeutron_VAR.setText("10");
+					lblAnzahlElektron_VAR.setText("9");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Francium")) {
+					lblMainTitle.setText("FRANCIUM [Fr]");
+					lblRelAtomMas_VAR.setText("223.0197");
+					lblOrdnungsZahl_VAR.setText("87");
+					lblSchmelzPunkt_VAR.setText("27 °C");
+					lblSiedeTemp_VAR.setText("598 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("2.9 g/cm^3");
+					lblElektNegativ_VAR.setText("0.7 (Pauling)");
+					lblElektKonfig_VAR.setText("[Rn]7s");
+					lblNaturKonfig_VAR.setText("[Fr-223 Spuren]");
+					lblAnzahlProton_VAR.setText("87");
+					lblAnzahlNeutron_VAR.setText("136");
+					lblAnzahlElektron_VAR.setText("87");
+					lblHauptGrupe_VAR.setText("I");
+				}
+				else if(wert.equals("Gallium")) {
+					lblMainTitle.setText("GALLIUM [Ga]");
+					lblRelAtomMas_VAR.setText("69.723");
+					lblOrdnungsZahl_VAR.setText("31");
+					lblSchmelzPunkt_VAR.setText("29.76 °C");
+					lblSiedeTemp_VAR.setText("2204 °C");
+					lblOxidation_VAR.setText("3, 2, 1");
+					lblDichtee_VAR.setText("5.904 g/cm^3");
+					lblElektNegativ_VAR.setText("1.81 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^10 4s^2 4p");
+					lblNaturKonfig_VAR.setText("Ga-69: 60.11%, Ga-71: 39.89%");
+					lblAnzahlProton_VAR.setText("31");
+					lblAnzahlNeutron_VAR.setText("38");
+					lblAnzahlElektron_VAR.setText("31");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Germanium")) {
+					lblMainTitle.setText("GERMANIUM [Ge]");
+					lblRelAtomMas_VAR.setText("72.63");
+					lblOrdnungsZahl_VAR.setText("32");
+					lblSchmelzPunkt_VAR.setText("938.25 °C");
+					lblSiedeTemp_VAR.setText("2833 °C");
+					lblOxidation_VAR.setText("4, 2, -4");
+					lblDichtee_VAR.setText("5.323 g/cm^3");
+					lblElektNegativ_VAR.setText("2.01 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^10, 4s^2, 4p^2");
+					lblNaturKonfig_VAR.setText("Ge-74: 36.72%, Ga-72: 27.31%, ...");
+					lblAnzahlProton_VAR.setText("32");
+					lblAnzahlNeutron_VAR.setText("40");
+					lblAnzahlElektron_VAR.setText("32");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Gold")) {
+					lblMainTitle.setText("GOLD [Au]");
+					lblRelAtomMas_VAR.setText("196.966");
+					lblOrdnungsZahl_VAR.setText("79");
+					lblSchmelzPunkt_VAR.setText("1064 °C");
+					lblSiedeTemp_VAR.setText("2856 °C");
+					lblOxidation_VAR.setText("5, 3, 2, 1");
+					lblDichtee_VAR.setText("19.32 g/cm^3");
+					lblElektNegativ_VAR.setText("2.4 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s");
+					lblNaturKonfig_VAR.setText("Au-197: 100%");
+					lblAnzahlProton_VAR.setText("79");
+					lblAnzahlNeutron_VAR.setText("118");
+					lblAnzahlElektron_VAR.setText("79");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Hafnium")) {
+					lblMainTitle.setText("HAFNIUM [Hf]");
+					lblRelAtomMas_VAR.setText("178.49");
+					lblOrdnungsZahl_VAR.setText("72");
+					lblSchmelzPunkt_VAR.setText("2233 °C");
+					lblSiedeTemp_VAR.setText("4603 °C");
+					lblOxidation_VAR.setText("4, 3, 1");
+					lblDichtee_VAR.setText("13.31 g/cm^3");
+					lblElektNegativ_VAR.setText("1.3 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^2 6s^2");
+					lblNaturKonfig_VAR.setText("Hf-180: 35.08%, Hf-178: 27.28%,...");
+					lblAnzahlProton_VAR.setText("72");
+					lblAnzahlNeutron_VAR.setText("106");
+					lblAnzahlElektron_VAR.setText("72");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Helium")) {
+					lblMainTitle.setText("HELIUM [He]");
+					lblRelAtomMas_VAR.setText("4");
+					lblOrdnungsZahl_VAR.setText("2");
+					lblSchmelzPunkt_VAR.setText("-272.2 °C");
+					lblSiedeTemp_VAR.setText("-268.93 °C");
+					lblOxidation_VAR.setText("- - -");
+					lblDichtee_VAR.setText("0.178 g/l");
+					lblElektNegativ_VAR.setText("Keine Angabe");
+					lblElektKonfig_VAR.setText("s^2");
+					lblNaturKonfig_VAR.setText("He-4: 99.99%,...");
+					lblAnzahlProton_VAR.setText("2");
+					lblAnzahlNeutron_VAR.setText("2");
+					lblAnzahlElektron_VAR.setText("2");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Indium")) {
+					lblMainTitle.setText("INDIUM [In]");
+					lblRelAtomMas_VAR.setText("114.81");
+					lblOrdnungsZahl_VAR.setText("49");
+					lblSchmelzPunkt_VAR.setText("156.61 °C");
+					lblSiedeTemp_VAR.setText("2072 °C");
+					lblOxidation_VAR.setText("3, 2, 1");
+					lblDichtee_VAR.setText("7.31 g/cm^3");
+					lblElektNegativ_VAR.setText("1.78 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10, 5s^2 5p");
+					lblNaturKonfig_VAR.setText("In-113: 4.29%, In-115: 96.71%");
+					lblAnzahlProton_VAR.setText("49");
+					lblAnzahlNeutron_VAR.setText("66");
+					lblAnzahlElektron_VAR.setText("49");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Iod")) {
+					lblMainTitle.setText("IOD [I]");
+					lblRelAtomMas_VAR.setText("126.90");
+					lblOrdnungsZahl_VAR.setText("53");
+					lblSchmelzPunkt_VAR.setText("113.7 °C");
+					lblSiedeTemp_VAR.setText("184.4 °C");
+					lblOxidation_VAR.setText("7, 5, 3, 1, -1");
+					lblDichtee_VAR.setText("4.93 g/cm^3");
+					lblElektNegativ_VAR.setText("2.66 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr] 4d^10 5s^2 5p^5");
+					lblNaturKonfig_VAR.setText("I-127: 100%");
+					lblAnzahlProton_VAR.setText("53");
+					lblAnzahlNeutron_VAR.setText("74");
+					lblAnzahlElektron_VAR.setText("53");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Iridium")) {
+					lblMainTitle.setText("IRIDIUM [Ir]");
+					lblRelAtomMas_VAR.setText("192.217");
+					lblOrdnungsZahl_VAR.setText("77");
+					lblSchmelzPunkt_VAR.setText("2446 °C");
+					lblSiedeTemp_VAR.setText("4428 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 1, 0, -1");
+					lblDichtee_VAR.setText("22.562 g/cm^3");
+					lblElektNegativ_VAR.setText("2.2 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^7 6s^2");
+					lblNaturKonfig_VAR.setText("Ir-191: 37.3%, Ir-193: 61.7%");
+					lblAnzahlProton_VAR.setText("77");
+					lblAnzahlNeutron_VAR.setText("115");
+					lblAnzahlElektron_VAR.setText("77");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Kalium")) {
+					lblMainTitle.setText("KALIUM [K]");
+					lblRelAtomMas_VAR.setText("39.09");
+					lblOrdnungsZahl_VAR.setText("19");
+					lblSchmelzPunkt_VAR.setText("63.5 °C");
+					lblSiedeTemp_VAR.setText("759 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("0.89 g/cm^3");
+					lblElektNegativ_VAR.setText("0.82 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]4s");
+					lblNaturKonfig_VAR.setText("K-39: 93.25%,...");
+					lblAnzahlProton_VAR.setText("19");
+					lblAnzahlNeutron_VAR.setText("20");
+					lblAnzahlElektron_VAR.setText("19");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Kohlenstoff")) {
+					lblMainTitle.setText("KOHLENSTOFF [C]");
+					lblRelAtomMas_VAR.setText("12.01");
+					lblOrdnungsZahl_VAR.setText("6");
+					lblSchmelzPunkt_VAR.setText("3600 °C");
+					lblSiedeTemp_VAR.setText("Keine Angabe");
+					lblOxidation_VAR.setText("4, 2, -4");
+					lblDichtee_VAR.setText("3.15 - 3.53 g/cm^3");
+					lblElektNegativ_VAR.setText("2.55 (Pauling)");
+					lblElektKonfig_VAR.setText("[He] 2s^2 2p^2");
+					lblNaturKonfig_VAR.setText("C-12: 98.93%, C-13: 1.07%,...");
+					lblAnzahlProton_VAR.setText("6");
+					lblAnzahlNeutron_VAR.setText("6");
+					lblAnzahlElektron_VAR.setText("6");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Krypton")) {
+					lblMainTitle.setText("KRYPTON [Kr]");
+					lblRelAtomMas_VAR.setText("83.79");
+					lblOrdnungsZahl_VAR.setText("36");
+					lblSchmelzPunkt_VAR.setText("-157.36 °C");
+					lblSiedeTemp_VAR.setText("-153.34 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("3.733 g/l");
+					lblElektNegativ_VAR.setText("- - -");
+					lblElektKonfig_VAR.setText("[Ar] 3d^10 4s^2 4p^6");
+					lblNaturKonfig_VAR.setText("Kr-84: 56.98%, Kr-17: 17.27%,...");
+					lblAnzahlProton_VAR.setText("36");
+					lblAnzahlNeutron_VAR.setText("48");
+					lblAnzahlElektron_VAR.setText("36");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Kupfer")) {
+					lblMainTitle.setText("KUPFER [Cu]");
+					lblRelAtomMas_VAR.setText("63.546");
+					lblOrdnungsZahl_VAR.setText("29");
+					lblSchmelzPunkt_VAR.setText("1085 °C");
+					lblSiedeTemp_VAR.setText("2562 °C");
+					lblOxidation_VAR.setText("4, 3, 2, 1");
+					lblDichtee_VAR.setText("8.96 g/cm^3");
+					lblElektNegativ_VAR.setText("1.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar] 3d^10 4s");
+					lblNaturKonfig_VAR.setText("Cu-63: 69.15%, Cu-65: 30.85%,...");
+					lblAnzahlProton_VAR.setText("29");
+					lblAnzahlNeutron_VAR.setText("34");
+					lblAnzahlElektron_VAR.setText("29");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Lithium")) {
+					lblMainTitle.setText("LITHIUM [Li]");
+					lblRelAtomMas_VAR.setText("6.94");
+					lblOrdnungsZahl_VAR.setText("3");
+					lblSchmelzPunkt_VAR.setText("190.54 °C");
+					lblSiedeTemp_VAR.setText("1342 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("0.534 g/cm^3");
+					lblElektNegativ_VAR.setText("0.98 (Pauling)");
+					lblElektKonfig_VAR.setText("[He] 2s");
+					lblNaturKonfig_VAR.setText("Li-6: 7.59%, Li-7: 92.41%");
+					lblAnzahlProton_VAR.setText("3");
+					lblAnzahlNeutron_VAR.setText("4");
+					lblAnzahlElektron_VAR.setText("3");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Magnesium")) {
+					lblMainTitle.setText("MAGNESIUM [Mg]");
+					lblRelAtomMas_VAR.setText("24.3");
+					lblOrdnungsZahl_VAR.setText("12");
+					lblSchmelzPunkt_VAR.setText("650 °C");
+					lblSiedeTemp_VAR.setText("1090 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("1.738 g/cm^3");
+					lblElektNegativ_VAR.setText("1.31 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne] 3s^2");
+					lblNaturKonfig_VAR.setText("Mg-24: 78.99%, Mg-25: 10%, Mg-26: 11.01%");
+					lblAnzahlProton_VAR.setText("12");
+					lblAnzahlNeutron_VAR.setText("12");
+					lblAnzahlElektron_VAR.setText("12");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Mangan")) {
+					lblMainTitle.setText("MANGAN [Mn]");
+					lblRelAtomMas_VAR.setText("54.93");
+					lblOrdnungsZahl_VAR.setText("25");
+					lblSchmelzPunkt_VAR.setText("1246 °C");
+					lblSiedeTemp_VAR.setText("2061 °C");
+					lblOxidation_VAR.setText("7, 6, 5, 4, 3, 2, 2, 1, 0, -1, -2, -3");
+					lblDichtee_VAR.setText("7.44 g/cm^3");
+					lblElektNegativ_VAR.setText("1.55 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^5 4s^2");
+					lblNaturKonfig_VAR.setText("Mn-55: 100%");
+					lblAnzahlProton_VAR.setText("25");
+					lblAnzahlNeutron_VAR.setText("30");
+					lblAnzahlElektron_VAR.setText("25");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Molybdaen")) {
+					lblMainTitle.setText("MOLYBDAEN [Mo]");
+					lblRelAtomMas_VAR.setText("95.95");
+					lblOrdnungsZahl_VAR.setText("42");
+					lblSchmelzPunkt_VAR.setText("2623 °C");
+					lblSiedeTemp_VAR.setText("4639 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 1, 0, -1, -2");
+					lblDichtee_VAR.setText("10.22 g/cm^3");
+					lblElektNegativ_VAR.setText("2.16 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^5 5s");
+					lblNaturKonfig_VAR.setText("Mo-98: 24.19%, Mo-96: 16.68%");
+					lblAnzahlProton_VAR.setText("42");
+					lblAnzahlNeutron_VAR.setText("54");
+					lblAnzahlElektron_VAR.setText("42");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Natrium")) {
+					lblMainTitle.setText("NATRIUM [Na]");
+					lblRelAtomMas_VAR.setText("22.98");
+					lblOrdnungsZahl_VAR.setText("11");
+					lblSchmelzPunkt_VAR.setText("97.8 °C");
+					lblSiedeTemp_VAR.setText("883 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("0.971 g/cm^3");
+					lblElektNegativ_VAR.setText("0.93 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne]3s");
+					lblNaturKonfig_VAR.setText("Na-23: 100%");
+					lblAnzahlProton_VAR.setText("11");
+					lblAnzahlNeutron_VAR.setText("11");
+					lblAnzahlElektron_VAR.setText("11");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Neon")) {
+					lblMainTitle.setText("NEON [Ne]");
+					lblRelAtomMas_VAR.setText("20.179");
+					lblOrdnungsZahl_VAR.setText("10");
+					lblSchmelzPunkt_VAR.setText("-248.61 °C");
+					lblSiedeTemp_VAR.setText("-246.06 °C");
+					lblOxidation_VAR.setText("- - -");
+					lblDichtee_VAR.setText("0.89 g/l");
+					lblElektNegativ_VAR.setText("keine Angabe");
+					lblElektKonfig_VAR.setText("[He]2s^2 2p^6");
+					lblNaturKonfig_VAR.setText("Ne-20: 90.48%, Ne-22: 9.25%,...");
+					lblAnzahlProton_VAR.setText("10");
+					lblAnzahlNeutron_VAR.setText("10");
+					lblAnzahlElektron_VAR.setText("10");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Nickel")) {
+					lblMainTitle.setText("NICKEL [Ni]");
+					lblRelAtomMas_VAR.setText("58.69");
+					lblOrdnungsZahl_VAR.setText("28");
+					lblSchmelzPunkt_VAR.setText("1455 °C");
+					lblSiedeTemp_VAR.setText("2913 °C");
+					lblOxidation_VAR.setText("4, 3, 2, 1, 0, -1");
+					lblDichtee_VAR.setText("8.902 g/cm^3");
+					lblElektNegativ_VAR.setText("1.91 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^8 4s^2");
+					lblNaturKonfig_VAR.setText("Ni-58: 68.07%, Ni-60: 26.22%");
+					lblAnzahlProton_VAR.setText("28");
+					lblAnzahlNeutron_VAR.setText("30");
+					lblAnzahlElektron_VAR.setText("28");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Niob")) {
+					lblMainTitle.setText("NIOB [Nb]");
+					lblRelAtomMas_VAR.setText("92.90");
+					lblOrdnungsZahl_VAR.setText("41");
+					lblSchmelzPunkt_VAR.setText("2477 °C");
+					lblSiedeTemp_VAR.setText("4744 °C");
+					lblOxidation_VAR.setText("5, 4, 3, 2, 1, -1");
+					lblDichtee_VAR.setText("8.57 g/cm^3");
+					lblElektNegativ_VAR.setText("1.6 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^4 5s");
+					lblNaturKonfig_VAR.setText("Nb-93: 100%");
+					lblAnzahlProton_VAR.setText("41");
+					lblAnzahlNeutron_VAR.setText("52");
+					lblAnzahlElektron_VAR.setText("41");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Osmium")) {
+					lblMainTitle.setText("OSMIUM [Os]");
+					lblRelAtomMas_VAR.setText("190.23");
+					lblOrdnungsZahl_VAR.setText("76");
+					lblSchmelzPunkt_VAR.setText("3033 °C");
+					lblSiedeTemp_VAR.setText("5012 °C");
+					lblOxidation_VAR.setText("8, 6, 5, 4, 3, 2, 1, 0, -2");
+					lblDichtee_VAR.setText("22.587 g/cm^3");
+					lblElektNegativ_VAR.setText("2.2 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe] 4f^14 5d^6 6s^2");
+					lblNaturKonfig_VAR.setText("Os-192: 44.78%, Os-190: 26.26%,...");
+					lblAnzahlProton_VAR.setText("76");
+					lblAnzahlNeutron_VAR.setText("114");
+					lblAnzahlElektron_VAR.setText("76");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Palladium")) {
+					lblMainTitle.setText("PALLADIUM [Pd]");
+					lblRelAtomMas_VAR.setText("106.42");
+					lblOrdnungsZahl_VAR.setText("46");
+					lblSchmelzPunkt_VAR.setText("1555 °C");
+					lblSiedeTemp_VAR.setText("2963 °C");
+					lblOxidation_VAR.setText("4, 3, 2, 0");
+					lblDichtee_VAR.setText("12.02 g/cm^3");
+					lblElektNegativ_VAR.setText("2.20 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10");
+					lblNaturKonfig_VAR.setText("Pd-106: 27.33%, Pd-108: 26.46%,...");
+					lblAnzahlProton_VAR.setText("46");
+					lblAnzahlNeutron_VAR.setText("60");
+					lblAnzahlElektron_VAR.setText("46");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Phosphor")) {
+					lblMainTitle.setText("PHOSPHOR [P]");
+					lblRelAtomMas_VAR.setText("30.97");
+					lblOrdnungsZahl_VAR.setText("15");
+					lblSchmelzPunkt_VAR.setText("44.1 °C");
+					lblSiedeTemp_VAR.setText("280.5 °C");
+					lblOxidation_VAR.setText("5, 3, -3");
+					lblDichtee_VAR.setText("1.823 g/cm^3");
+					lblElektNegativ_VAR.setText("2.19 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne]3s^2 3p^3");
+					lblNaturKonfig_VAR.setText("P-31: 100%");
+					lblAnzahlProton_VAR.setText("15");
+					lblAnzahlNeutron_VAR.setText("15");
+					lblAnzahlElektron_VAR.setText("15");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Platin")) {
+					lblMainTitle.setText("PLATIN [Pt]");
+					lblRelAtomMas_VAR.setText("195.084");
+					lblOrdnungsZahl_VAR.setText("78");
+					lblSchmelzPunkt_VAR.setText("1768 °C");
+					lblSiedeTemp_VAR.setText("3825 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 2, 0");
+					lblDichtee_VAR.setText("21.45 g/cm^3");
+					lblElektNegativ_VAR.setText("2.28 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^9 6s");
+					lblNaturKonfig_VAR.setText("Pt-194: 32.967%, Pt-195: 33.832%,...");
+					lblAnzahlProton_VAR.setText("78");
+					lblAnzahlNeutron_VAR.setText("117");
+					lblAnzahlElektron_VAR.setText("78");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Polonium")) {
+					lblMainTitle.setText("POLONIUM [Po]");
+					lblRelAtomMas_VAR.setText("209");
+					lblOrdnungsZahl_VAR.setText("84");
+					lblSchmelzPunkt_VAR.setText("254 °C");
+					lblSiedeTemp_VAR.setText("962 °C");
+					lblOxidation_VAR.setText("6, 4, -2");
+					lblDichtee_VAR.setText("9.2 g/cm^3");
+					lblElektNegativ_VAR.setText("2 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2 6p^4");
+					lblNaturKonfig_VAR.setText("- - -");
+					lblAnzahlProton_VAR.setText("84");
+					lblAnzahlNeutron_VAR.setText("125");
+					lblAnzahlElektron_VAR.setText("84");
+					lblHauptGrupe_VAR.setText("VI");
+				}
+				else if(wert.equals("Quecksilber")) {
+					lblMainTitle.setText("QUECKSILBER [Hg]");
+					lblRelAtomMas_VAR.setText("200.59");
+					lblOrdnungsZahl_VAR.setText("80");
+					lblSchmelzPunkt_VAR.setText("-38.89 °C");
+					lblSiedeTemp_VAR.setText("356.58 °C");
+					lblOxidation_VAR.setText("2, 1");
+					lblDichtee_VAR.setText("13.546 g/cm^3");
+					lblElektNegativ_VAR.setText("1.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2");
+					lblNaturKonfig_VAR.setText("Hg-199: 16,87%, Hg-200: 23.10%, Hg-202: 29.86%");
+					lblAnzahlProton_VAR.setText("80");
+					lblAnzahlNeutron_VAR.setText("120");
+					lblAnzahlElektron_VAR.setText("80");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Radium")) {
+					lblMainTitle.setText("RADIUM [Ra]");
+					lblRelAtomMas_VAR.setText("226,0254");
+					lblOrdnungsZahl_VAR.setText("88");
+					lblSchmelzPunkt_VAR.setText("700 °C");
+					lblSiedeTemp_VAR.setText("1737 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("5 g/cm^3");
+					lblElektNegativ_VAR.setText("0.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Rn]7s^2");
+					lblNaturKonfig_VAR.setText("[RA-223, RA-224, RA-226, RA-228]");
+					lblAnzahlProton_VAR.setText("88");
+					lblAnzahlNeutron_VAR.setText("138");
+					lblAnzahlElektron_VAR.setText("88");
+					lblHauptGrupe_VAR.setText("II");
+				}
+				else if(wert.equals("Radon")) {
+					lblMainTitle.setText("RADON [Rh]");
+					lblRelAtomMas_VAR.setText("222.0176");
+					lblOrdnungsZahl_VAR.setText("86");
+					lblSchmelzPunkt_VAR.setText("-71 °C");
+					lblSiedeTemp_VAR.setText("-61.7 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("9.73 g/l");
+					lblElektNegativ_VAR.setText("---");
+					lblElektKonfig_VAR.setText("[Xe]4f^(14) 5d^(10) 6s^(2) 6p^(6)");
+					lblNaturKonfig_VAR.setText("[Rn-219 1%, Rn-220 9%, Rn-222 90%]");
+					lblAnzahlProton_VAR.setText("86");
+					lblAnzahlNeutron_VAR.setText("136");
+					lblAnzahlElektron_VAR.setText("86");
+					lblHauptGrupe_VAR.setText("VIII");
+				}
+				else if(wert.equals("Rhenium")) {
+					lblMainTitle.setText("RHENIUM ");
+					lblRelAtomMas_VAR.setText("186.207");
+					lblOrdnungsZahl_VAR.setText("75");
+					lblSchmelzPunkt_VAR.setText("3186 °C");
+					lblSiedeTemp_VAR.setText("5596 °C");
+					lblOxidation_VAR.setText("7, 6, 5, 4, 3, 2, 1, 0, -1, -3");
+					lblDichtee_VAR.setText("20.8 g/cm^3");
+					lblElektNegativ_VAR.setText("1.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^5 6s^2");
+					lblNaturKonfig_VAR.setText("Re-185: 37.40%, Re-187: 62.60%");
+					lblAnzahlProton_VAR.setText("75");
+					lblAnzahlNeutron_VAR.setText("111");
+					lblAnzahlElektron_VAR.setText("75");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Rhodium")) {
+					lblMainTitle.setText("RHODIUM [Rh]");
+					lblRelAtomMas_VAR.setText("102.905");
+					lblOrdnungsZahl_VAR.setText("45");
+					lblSchmelzPunkt_VAR.setText("1964 °C");
+					lblSiedeTemp_VAR.setText("3695 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 1, 0, -1");
+					lblDichtee_VAR.setText("12,41 g/cm^3");
+					lblElektNegativ_VAR.setText("2.28 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^8 5s");
+					lblNaturKonfig_VAR.setText("Rh-103: 100%");
+					lblAnzahlProton_VAR.setText("45");
+					lblAnzahlNeutron_VAR.setText("58");
+					lblAnzahlElektron_VAR.setText("45");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Rubidium")) {
+					lblMainTitle.setText("RUBIDIUM [Rb]");
+					lblRelAtomMas_VAR.setText("85.4678");
+					lblOrdnungsZahl_VAR.setText("37 °C");
+					lblSchmelzPunkt_VAR.setText("39.30 °C");
+					lblSiedeTemp_VAR.setText("688 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("1.532 g/cm^3");
+					lblElektNegativ_VAR.setText("0.82(Pauling)");
+					lblElektKonfig_VAR.setText("[KR]5s");
+					lblNaturKonfig_VAR.setText("[Rb-85: 72.17%], [Rb-87: 27.83%]");
+					lblAnzahlProton_VAR.setText("37");
+					lblAnzahlNeutron_VAR.setText("50");
+					lblAnzahlElektron_VAR.setText("37");
+					lblHauptGrupe_VAR.setText("I");
+				}
+				else if(wert.equals("Ruthenium")) {
+					lblMainTitle.setText("RUTHENIUM [Ru]");
+					lblRelAtomMas_VAR.setText("101.07");
+					lblOrdnungsZahl_VAR.setText("44");
+					lblSchmelzPunkt_VAR.setText("2334 °C");
+					lblSiedeTemp_VAR.setText("4150 °C");
+					lblOxidation_VAR.setText("8, 7, 6, 5, 4, 3, 2, 1, 0, -2");
+					lblDichtee_VAR.setText("12.1 g/cm^3");
+					lblElektNegativ_VAR.setText("2.20 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^7 5s");
+					lblNaturKonfig_VAR.setText("Ru-102: 31.55%, Ru-101: 17.06%,...");
+					lblAnzahlProton_VAR.setText("44");
+					lblAnzahlNeutron_VAR.setText("57");
+					lblAnzahlElektron_VAR.setText("44");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Sauerstoff")) {
+					lblMainTitle.setText("SAUERSTOFF [O]");
+					lblRelAtomMas_VAR.setText("16");
+					lblOrdnungsZahl_VAR.setText("8");
+					lblSchmelzPunkt_VAR.setText("-218.80 °C");
+					lblSiedeTemp_VAR.setText("-182.96 °C");
+					lblOxidation_VAR.setText("-2, -1, 0, 1, 2");
+					lblDichtee_VAR.setText("1.42 g/l");
+					lblElektNegativ_VAR.setText("3.44 (Pauling)");
+					lblElektKonfig_VAR.setText("[He]2s^2 2p^4");
+					lblNaturKonfig_VAR.setText("O-16: 99.757%,...");
+					lblAnzahlProton_VAR.setText("8");
+					lblAnzahlNeutron_VAR.setText("8");
+					lblAnzahlElektron_VAR.setText("8");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Scandium")) {
+					lblMainTitle.setText("SCANDIUM [Sc]");
+					lblRelAtomMas_VAR.setText("44.95");
+					lblOrdnungsZahl_VAR.setText("21");
+					lblSchmelzPunkt_VAR.setText("1541 °C");
+					lblSiedeTemp_VAR.setText("2836 °C");
+					lblOxidation_VAR.setText("3");
+					lblDichtee_VAR.setText("2.98 g/cm^3");
+					lblElektNegativ_VAR.setText("1.36 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d 4s^2");
+					lblNaturKonfig_VAR.setText("Sc-45: 100%");
+					lblAnzahlProton_VAR.setText("21");
+					lblAnzahlNeutron_VAR.setText("24");
+					lblAnzahlElektron_VAR.setText("21");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Schwefel")) {
+					lblMainTitle.setText("SCHWEFEL [S]");
+					lblRelAtomMas_VAR.setText("32.06");
+					lblOrdnungsZahl_VAR.setText("16");
+					lblSchmelzPunkt_VAR.setText("115.2 °C");
+					lblSiedeTemp_VAR.setText("444.61 °C");
+					lblOxidation_VAR.setText("6, 4, 2, -2");
+					lblDichtee_VAR.setText("2.07 g/cm^3");
+					lblElektNegativ_VAR.setText("2.58 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne]3s^2 3p^4");
+					lblNaturKonfig_VAR.setText("S-32: 94.99%");
+					lblAnzahlProton_VAR.setText("16");
+					lblAnzahlNeutron_VAR.setText("16");
+					lblAnzahlElektron_VAR.setText("16");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Selen")) {
+					lblMainTitle.setText("SELEN [Se]");
+					lblRelAtomMas_VAR.setText("107.8682");
+					lblOrdnungsZahl_VAR.setText("47");
+					lblSchmelzPunkt_VAR.setText("961.93 °C");
+					lblSiedeTemp_VAR.setText("2162 °C");
+					lblOxidation_VAR.setText("3, 2, 1");
+					lblDichtee_VAR.setText("10.50 g/cm^3");
+					lblElektNegativ_VAR.setText("1.93 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s");
+					lblNaturKonfig_VAR.setText("Ag-107: 51.84%, Ag-109: 48.15%");
+					lblAnzahlProton_VAR.setText("47");
+					lblAnzahlNeutron_VAR.setText("60");
+					lblAnzahlElektron_VAR.setText("47");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Silber")) {
+					lblMainTitle.setText("SILBER [Ag]");
+					lblRelAtomMas_VAR.setText("107.86");
+					lblOrdnungsZahl_VAR.setText("47");
+					lblSchmelzPunkt_VAR.setText("961.93 °C");
+					lblSiedeTemp_VAR.setText("2162 °C");
+					lblOxidation_VAR.setText("3, 2, 1");
+					lblDichtee_VAR.setText("10.5 g/cm^3");
+					lblElektNegativ_VAR.setText("1.93 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s");
+					lblNaturKonfig_VAR.setText("Ag-107: 51.839%, Ag-109: 48.161%");
+					lblAnzahlProton_VAR.setText("47");
+					lblAnzahlNeutron_VAR.setText("60");
+					lblAnzahlElektron_VAR.setText("47");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Silizium")) {
+					lblMainTitle.setText("SILIZIUM [Si]");
+					lblRelAtomMas_VAR.setText("28.085");
+					lblOrdnungsZahl_VAR.setText("14");
+					lblSchmelzPunkt_VAR.setText("1414 °C");
+					lblSiedeTemp_VAR.setText("3265 °C");
+					lblOxidation_VAR.setText("4, 2, -4");
+					lblDichtee_VAR.setText("2.33 g/cm^3");
+					lblElektNegativ_VAR.setText("1.9 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ne]3s^2 3p^2");
+					lblNaturKonfig_VAR.setText("Si-28: 92.223%");
+					lblAnzahlProton_VAR.setText("14");
+					lblAnzahlNeutron_VAR.setText("14");
+					lblAnzahlElektron_VAR.setText("14");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Stickstoff")) {
+					lblMainTitle.setText("STICKSTOFF [N]");
+					lblRelAtomMas_VAR.setText("14");
+					lblOrdnungsZahl_VAR.setText("7");
+					lblSchmelzPunkt_VAR.setText("-210 °C");
+					lblSiedeTemp_VAR.setText("-195.79 °C");
+					lblOxidation_VAR.setText("-3, 5, 4, 3, 2");
+					lblDichtee_VAR.setText("1.250 g/l");
+					lblElektNegativ_VAR.setText("3.04 (Pauling)");
+					lblElektKonfig_VAR.setText("[He]2s^2 2p^3");
+					lblNaturKonfig_VAR.setText("N-14: 99.636%,...");
+					lblAnzahlProton_VAR.setText("7");
+					lblAnzahlNeutron_VAR.setText("7");
+					lblAnzahlElektron_VAR.setText("7");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Stronzium")) {
+					lblMainTitle.setText("STRONZIUM [Sr]");
+					lblRelAtomMas_VAR.setText("87.62");
+					lblOrdnungsZahl_VAR.setText("38");
+					lblSchmelzPunkt_VAR.setText("777 °C");
+					lblSiedeTemp_VAR.setText("1382 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("1.5");
+					lblElektNegativ_VAR.setText("0.95 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]5s^2");
+					lblNaturKonfig_VAR.setText("Sr-88: 82.58%, Sr-87: 7.00%,...");
+					lblAnzahlProton_VAR.setText("38");
+					lblAnzahlNeutron_VAR.setText("51");
+					lblAnzahlElektron_VAR.setText("38");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Tantal")) {
+					lblMainTitle.setText("TANTAL [Ta]");
+					lblRelAtomMas_VAR.setText("180.94");
+					lblOrdnungsZahl_VAR.setText("73");
+					lblSchmelzPunkt_VAR.setText("3017 °C");
+					lblSiedeTemp_VAR.setText("5458 °C");
+					lblOxidation_VAR.setText("5, 4, 3, 2, 1, -1");
+					lblDichtee_VAR.setText("16.4 g/cm^3");
+					lblElektNegativ_VAR.setText("1.5 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^3 6s^2");
+					lblNaturKonfig_VAR.setText("Ta-181: 99.988%,...");
+					lblAnzahlProton_VAR.setText("73");
+					lblAnzahlNeutron_VAR.setText("108");
+					lblAnzahlElektron_VAR.setText("73");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Technetium")) {
+					lblMainTitle.setText("TECHNETIUM [Tc]");
+					lblRelAtomMas_VAR.setText("98");
+					lblOrdnungsZahl_VAR.setText("43");
+					lblSchmelzPunkt_VAR.setText("2157 °C");
+					lblSiedeTemp_VAR.setText("4265 °C");
+					lblOxidation_VAR.setText("7, 6, 5, 4, 3, 2, 1, 0, -1, -3");
+					lblDichtee_VAR.setText("11.5 g/cm^3");
+					lblElektNegativ_VAR.setText("2.1 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^5 5s^2");
+					lblNaturKonfig_VAR.setText("Tc-99: Spuren (Radioaktiv)");
+					lblAnzahlProton_VAR.setText("43");
+					lblAnzahlNeutron_VAR.setText("55");
+					lblAnzahlElektron_VAR.setText("43");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Tellur")) {
+					lblMainTitle.setText("TELLUR [Te]");
+					lblRelAtomMas_VAR.setText("127.6");
+					lblOrdnungsZahl_VAR.setText("52");
+					lblSchmelzPunkt_VAR.setText("449.5 °C");
+					lblSiedeTemp_VAR.setText("988 °C");
+					lblOxidation_VAR.setText("6, 4, 2, -2");
+					lblDichtee_VAR.setText("6.25 g/cm^3");
+					lblElektNegativ_VAR.setText("2.10 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s^2 5p^4");
+					lblNaturKonfig_VAR.setText("Te-130: 34.98%, Te-128: 31.74%,...");
+					lblAnzahlProton_VAR.setText("52");
+					lblAnzahlNeutron_VAR.setText("76");
+					lblAnzahlElektron_VAR.setText("52");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Thallium")) {
+					lblMainTitle.setText("THALLIUM [TI]");
+					lblRelAtomMas_VAR.setText("204.38");
+					lblOrdnungsZahl_VAR.setText("81");
+					lblSchmelzPunkt_VAR.setText("304 °C");
+					lblSiedeTemp_VAR.setText("1473 °C");
+					lblOxidation_VAR.setText("3, 1");
+					lblDichtee_VAR.setText("11.85 g/cm^3");
+					lblElektNegativ_VAR.setText("1.8 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^10 6s^2 6p");
+					lblNaturKonfig_VAR.setText("TI-203: 29.52%, TI-205: 70.48%");
+					lblAnzahlProton_VAR.setText("81");
+					lblAnzahlNeutron_VAR.setText("123");
+					lblAnzahlElektron_VAR.setText("81");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Titan")) {
+					lblMainTitle.setText("TITAN [Ti]");
+					lblRelAtomMas_VAR.setText("47.86");
+					lblOrdnungsZahl_VAR.setText("22");
+					lblSchmelzPunkt_VAR.setText("1668 °C");
+					lblSiedeTemp_VAR.setText("3287 °C");
+					lblOxidation_VAR.setText("4, 3, 2");
+					lblDichtee_VAR.setText("4.51 g/cm^3");
+					lblElektNegativ_VAR.setText("1.54 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^2 4s^2");
+					lblNaturKonfig_VAR.setText("Ti-48: 73.72%,...");
+					lblAnzahlProton_VAR.setText("22");
+					lblAnzahlNeutron_VAR.setText("26");
+					lblAnzahlElektron_VAR.setText("22");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Vanadium")) {
+					lblMainTitle.setText("VANADIUM [V]");
+					lblRelAtomMas_VAR.setText("50.94");
+					lblOrdnungsZahl_VAR.setText("23");
+					lblSchmelzPunkt_VAR.setText("1910 °C");
+					lblSiedeTemp_VAR.setText("3407 °C");
+					lblOxidation_VAR.setText("5, 4, 3, 2, 1, 0, -1");
+					lblDichtee_VAR.setText("6 g/cm^3");
+					lblElektNegativ_VAR.setText("1.63 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^3 4s^2");
+					lblNaturKonfig_VAR.setText("V-50: 0.25%, V-51: 99.75%");
+					lblAnzahlProton_VAR.setText("23");
+					lblAnzahlNeutron_VAR.setText("28");
+					lblAnzahlElektron_VAR.setText("23");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Wasserstoff")) {
+					lblMainTitle.setText("WASSERSTOFF [H]");
+					lblRelAtomMas_VAR.setText("1");
+					lblOrdnungsZahl_VAR.setText("1");
+					lblSchmelzPunkt_VAR.setText("-259.1 °C");
+					lblSiedeTemp_VAR.setText("-252.76 °C");
+					lblOxidation_VAR.setText("1, -1");
+					lblDichtee_VAR.setText("0.089 g/l");
+					lblElektNegativ_VAR.setText("2.20 (Pauling)");
+					lblElektKonfig_VAR.setText("1s");
+					lblNaturKonfig_VAR.setText("Protium: 98.98%, Deuterium: 0.011%");
+					lblAnzahlProton_VAR.setText("1");
+					lblAnzahlNeutron_VAR.setText("0");
+					lblAnzahlElektron_VAR.setText("1");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Wolfram")) {
+					lblMainTitle.setText("WOLFRAM [W]");
+					lblRelAtomMas_VAR.setText("183.84");
+					lblOrdnungsZahl_VAR.setText("74");
+					lblSchmelzPunkt_VAR.setText("3422 °C");
+					lblSiedeTemp_VAR.setText("5555 °C");
+					lblOxidation_VAR.setText("6, 5, 4, 3, 2, 0, -1, -2");
+					lblDichtee_VAR.setText("19.3 g/cm^3");
+					lblElektNegativ_VAR.setText("1.7 (Pauling)");
+					lblElektKonfig_VAR.setText("[Xe]4f^14 5d^4 6s^2");
+					lblNaturKonfig_VAR.setText("W-184: 30.64%, W-186: 28.43%,...");
+					lblAnzahlProton_VAR.setText("74");
+					lblAnzahlNeutron_VAR.setText("110");
+					lblAnzahlElektron_VAR.setText("74");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Xenon")) {
+					lblMainTitle.setText("XENON [Xe]");
+					lblRelAtomMas_VAR.setText("131.293");
+					lblOrdnungsZahl_VAR.setText("54");
+					lblSchmelzPunkt_VAR.setText("-111.74 °C");
+					lblSiedeTemp_VAR.setText("-108.09 °C");
+					lblOxidation_VAR.setText("1");
+					lblDichtee_VAR.setText("5.887 g/l");
+					lblElektNegativ_VAR.setText("2.60 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s^2 5p^6");
+					lblNaturKonfig_VAR.setText("Xe-129: 26.4%, Xe-131: 21.23%, Xe-134: 10.43%,...");
+					lblAnzahlProton_VAR.setText("54");
+					lblAnzahlNeutron_VAR.setText("77");
+					lblAnzahlElektron_VAR.setText("54");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Yttrium")) {
+					lblMainTitle.setText("YTTRIUM [Y]");
+					lblRelAtomMas_VAR.setText("88.90");
+					lblOrdnungsZahl_VAR.setText("39");
+					lblSchmelzPunkt_VAR.setText("1522 °C");
+					lblSiedeTemp_VAR.setText("3345 °C");
+					lblOxidation_VAR.setText("3");
+					lblDichtee_VAR.setText("4.469 g/cm^3");
+					lblElektNegativ_VAR.setText("1.22 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d 5s^2");
+					lblNaturKonfig_VAR.setText("Y-89: 100%");
+					lblAnzahlProton_VAR.setText("39");
+					lblAnzahlNeutron_VAR.setText("50");
+					lblAnzahlElektron_VAR.setText("39");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Zink")) {
+					lblMainTitle.setText("ZINK [Zn]");
+					lblRelAtomMas_VAR.setText("65.38");
+					lblOrdnungsZahl_VAR.setText("30");
+					lblSchmelzPunkt_VAR.setText("419.53 °C");
+					lblSiedeTemp_VAR.setText("907 °C");
+					lblOxidation_VAR.setText("2");
+					lblDichtee_VAR.setText("7.134 g/cm^3");
+					lblElektNegativ_VAR.setText("1.65 (Pauling)");
+					lblElektKonfig_VAR.setText("[Ar]3d^10 4s^2");
+					lblNaturKonfig_VAR.setText("Zn-64: 48.26%, Zn-66: 27.97%,...");
+					lblAnzahlProton_VAR.setText("30");
+					lblAnzahlNeutron_VAR.setText("35");
+					lblAnzahlElektron_VAR.setText("30");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Zinn")) {
+					lblMainTitle.setText("ZINN [Sn]");
+					lblRelAtomMas_VAR.setText("118.710");
+					lblOrdnungsZahl_VAR.setText("50");
+					lblSchmelzPunkt_VAR.setText("231.968 °C");
+					lblSiedeTemp_VAR.setText("2602 °C");
+					lblOxidation_VAR.setText("4, 2");
+					lblDichtee_VAR.setText("7.29 g/cm^3");
+					lblElektNegativ_VAR.setText("1.94 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^10 5s^2 5p^2");
+					lblNaturKonfig_VAR.setText("Sn-120: 32.58%, Sn-118: 24.22%,...");
+					lblAnzahlProton_VAR.setText("50");
+					lblAnzahlNeutron_VAR.setText("69");
+					lblAnzahlElektron_VAR.setText("50");
+					lblHauptGrupe_VAR.setText("");
+				}
+				else if(wert.equals("Zirconium")) {
+					lblMainTitle.setText("ZIRCONIUM [Zr]");
+					lblRelAtomMas_VAR.setText("91.224");
+					lblOrdnungsZahl_VAR.setText("40");
+					lblSchmelzPunkt_VAR.setText("1855 °C");
+					lblSiedeTemp_VAR.setText("4409 °C");
+					lblOxidation_VAR.setText("4, 3, 2, 1");
+					lblDichtee_VAR.setText("6.52 g/cm^3");
+					lblElektNegativ_VAR.setText("1.34 (Pauling)");
+					lblElektKonfig_VAR.setText("[Kr]4d^2 5s^2");
+					lblNaturKonfig_VAR.setText("Zr-90: 51.45%, Zr-94: 17.38%,...");
+					lblAnzahlProton_VAR.setText("40");
+					lblAnzahlNeutron_VAR.setText("51");
+					lblAnzahlElektron_VAR.setText("40");
+					lblHauptGrupe_VAR.setText("");
+				}
+			}
+		});
+		btnAusWaehlen.setBackground(Color.ORANGE);
+		btnAusWaehlen.setBounds(10, 40, 105, 23);
+		contentPane.add(btnAusWaehlen);
+	}
+}
