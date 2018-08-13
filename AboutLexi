@@ -1,0 +1,45 @@
+package java2enterprise_mainFrame;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JEditorPane;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Toolkit;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+
+public class AboutLexi extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	public AboutLexi() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\MuhammetEsmer\\Pictures\\Lexi_Logo.png"));
+		setTitle("About Lexi");
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.GRAY);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JEditorPane dtrpnLexiIstEin = new JEditorPane();
+		dtrpnLexiIstEin.setEditable(false);
+		dtrpnLexiIstEin.setForeground(Color.ORANGE);
+		dtrpnLexiIstEin.setText("Lexi ist ein Applikation welches sich im Wissenschaftlichen bereich aneignen l\u00E4sst.\r\nDas Programm beinhaltet in der Version 1.0 (Alpha) einen                 Einheiten Umrechner f\u00FCr verschiedene Physikalische Einheiten, einen Wissenschaftlichen Rechner, Die Wichtigsten Elemente der Chemie  und die Physikalischen konstanten in einer Tabelle.\r\nCopyright 2018 Java2Enterprise TEAM");
+		dtrpnLexiIstEin.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		dtrpnLexiIstEin.setBackground(Color.GRAY);
+		dtrpnLexiIstEin.setBounds(10, 11, 424, 125);
+		contentPane.add(dtrpnLexiIstEin);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\MuhammetEsmer\\Pictures\\Lexi_Logo.png"));
+		lblNewLabel.setBounds(91, 147, 252, 113);
+		contentPane.add(lblNewLabel);
+		
+	}
+}
