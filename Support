@@ -1,0 +1,58 @@
+package java2enterprise_mainFrame;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Toolkit;
+
+public class Support extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	public Support() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\MuhammetEsmer\\Pictures\\Lexi_Logo.png"));
+		setTitle("Support");
+		setResizable(false);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 425, 255);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.GRAY);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Java2Enterprise Team");
+		lblNewLabel.setForeground(Color.RED);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 36));
+		lblNewLabel.setBounds(10, 11, 412, 65);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("java2enterprise.blogspot.de");
+		lblNewLabel_1.setForeground(Color.ORANGE);
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_1.setBounds(10, 87, 399, 25);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblHttpswwwfacebookcomdeveloperjavaenterprise = new JLabel("facebook.com/developerjava2enterprise");
+		lblHttpswwwfacebookcomdeveloperjavaenterprise.setForeground(Color.ORANGE);
+		lblHttpswwwfacebookcomdeveloperjavaenterprise.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblHttpswwwfacebookcomdeveloperjavaenterprise.setBounds(10, 123, 399, 25);
+		contentPane.add(lblHttpswwwfacebookcomdeveloperjavaenterprise);
+		
+		JLabel lblWittercomjedev = new JLabel("twitter.com/J2E_Dev");
+		lblWittercomjedev.setForeground(Color.ORANGE);
+		lblWittercomjedev.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblWittercomjedev.setBounds(10, 159, 399, 25);
+		contentPane.add(lblWittercomjedev);
+		
+		JLabel lblInstagramcomjavaenterprise = new JLabel("instagram.com/java2enterprise/");
+		lblInstagramcomjavaenterprise.setForeground(Color.ORANGE);
+		lblInstagramcomjavaenterprise.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblInstagramcomjavaenterprise.setBounds(10, 195, 399, 25);
+		contentPane.add(lblInstagramcomjavaenterprise);
+	}
+}
